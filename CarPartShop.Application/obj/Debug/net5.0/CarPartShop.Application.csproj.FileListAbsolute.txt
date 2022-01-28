@@ -1,0 +1,12 @@
+D:\TavProjects\CarPartShopApi\CarPartShop\CarPartShop.Application\bin\Debug\net5.0\CarPartShop.Application.deps.json
+D:\TavProjects\CarPartShopApi\CarPartShop\CarPartShop.Application\bin\Debug\net5.0\CarPartShop.Application.dll
+D:\TavProjects\CarPartShopApi\CarPartShop\CarPartShop.Application\bin\Debug\net5.0\ref\CarPartShop.Application.dll
+D:\TavProjects\CarPartShopApi\CarPartShop\CarPartShop.Application\bin\Debug\net5.0\CarPartShop.Application.pdb
+D:\TavProjects\CarPartShopApi\CarPartShop\CarPartShop.Application\obj\Debug\net5.0\CarPartShop.Application.csproj.AssemblyReference.cache
+D:\TavProjects\CarPartShopApi\CarPartShop\CarPartShop.Application\obj\Debug\net5.0\CarPartShop.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\TavProjects\CarPartShopApi\CarPartShop\CarPartShop.Application\obj\Debug\net5.0\CarPartShop.Application.AssemblyInfoInputs.cache
+D:\TavProjects\CarPartShopApi\CarPartShop\CarPartShop.Application\obj\Debug\net5.0\CarPartShop.Application.AssemblyInfo.cs
+D:\TavProjects\CarPartShopApi\CarPartShop\CarPartShop.Application\obj\Debug\net5.0\CarPartShop.Application.csproj.CoreCompileInputs.cache
+D:\TavProjects\CarPartShopApi\CarPartShop\CarPartShop.Application\obj\Debug\net5.0\CarPartShop.Application.dll
+D:\TavProjects\CarPartShopApi\CarPartShop\CarPartShop.Application\obj\Debug\net5.0\ref\CarPartShop.Application.dll
+D:\TavProjects\CarPartShopApi\CarPartShop\CarPartShop.Application\obj\Debug\net5.0\CarPartShop.Application.pdb

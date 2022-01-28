@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "CarPartShopApi.Domain/1.0.0": {
+        "runtime": {
+          "CarPartShopApi.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CarPartShopApi.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
