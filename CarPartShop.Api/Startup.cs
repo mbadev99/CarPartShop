@@ -1,4 +1,6 @@
 using CarPartShop.Infrastructure;
+using CarPartShop.Infrastructure.Repository;
+using CarPartShop.Infrastructure.RepositoryContracts;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -30,6 +32,10 @@ namespace CarPartShop.Api
         {
             var ConnectionString = Configuration.GetConnectionString("CarPartShop");
             services.AddDbContext<EfCarPartContext>(options => options.UseSqlServer(ConnectionString));
+
+            services.AddScoped<CarBrandRepository, EFCarBrandRepository>();
+            services.AddScoped<CarModelRepository, EFCarModelRepository>();
+            services.AddScoped<UnitOfWork, EFUnitOfWork>();
 
             services.AddControllers();
             services.AddSwaggerGen(c =>

@@ -16,3 +16,5 @@ D:\TavProjects\CarPartShopApi\CarPartShop\CarPartShop.Infrastructure\obj\Debug\n
 D:\TavProjects\CarPartShopApi\CarPartShop\CarPartShop.Infrastructure\obj\Debug\net5.0\ref\CarPartShop.Infrastructure.dll
 D:\TavProjects\CarPartShopApi\CarPartShop\CarPartShop.Infrastructure\obj\Debug\net5.0\CarPartShop.Infrastructure.pdb
 D:\TavProjects\CarPartShopApi\CarPartShop\CarPartShop.Infrastructure\obj\Debug\net5.0\CarPartShop.Infrastructure.genruntimeconfig.cache
+D:\TavProjects\CarPartShopApi\CarPartShop\CarPartShop.Infrastructure\bin\Debug\net5.0\CarPartShop.Application.dll
+D:\TavProjects\CarPartShopApi\CarPartShop\CarPartShop.Infrastructure\bin\Debug\net5.0\CarPartShop.Application.pdb

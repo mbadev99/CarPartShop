@@ -1520,6 +1520,16 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "CarPartShop.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/CarPartShop.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CarPartShop.Application.dll": {}
+        }
+      },
       "CarPartShopApi.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -5798,6 +5808,11 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
+    "CarPartShop.Application/1.0.0": {
+      "type": "project",
+      "path": "../CarPartShop.Application/CarPartShop.Application.csproj",
+      "msbuildProject": "../CarPartShop.Application/CarPartShop.Application.csproj"
+    },
     "CarPartShopApi.Domain/1.0.0": {
       "type": "project",
       "path": "../CarPartShopApi.Domain/CarPartShopApi.Domain.csproj",
@@ -5806,6 +5821,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "CarPartShop.Application >= 1.0.0",
       "CarPartShopApi.Domain >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 5.0.13",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.13",
@@ -5839,6 +5855,9 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
+            "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShop.Application\\CarPartShop.Application.csproj": {
+              "projectPath": "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShop.Application\\CarPartShop.Application.csproj"
+            },
             "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShopApi.Domain\\CarPartShopApi.Domain.csproj": {
               "projectPath": "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShopApi.Domain\\CarPartShopApi.Domain.csproj"
             }

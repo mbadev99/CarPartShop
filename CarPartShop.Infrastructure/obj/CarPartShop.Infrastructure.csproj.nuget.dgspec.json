@@ -4,6 +4,60 @@
     "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShop.Infrastructure\\CarPartShop.Infrastructure.csproj": {}
   },
   "projects": {
+    "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShop.Application\\CarPartShop.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShop.Application\\CarPartShop.Application.csproj",
+        "projectName": "CarPartShop.Application",
+        "projectPath": "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShop.Application\\CarPartShop.Application.csproj",
+        "packagesPath": "C:\\Users\\MBA\\.nuget\\packages\\",
+        "outputPath": "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShop.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\MBA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShop.Infrastructure\\CarPartShop.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -28,6 +82,9 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
+              "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShop.Application\\CarPartShop.Application.csproj": {
+                "projectPath": "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShop.Application\\CarPartShop.Application.csproj"
+              },
               "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShopApi.Domain\\CarPartShopApi.Domain.csproj": {
                 "projectPath": "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShopApi.Domain\\CarPartShopApi.Domain.csproj"
               }

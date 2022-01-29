@@ -1393,6 +1393,7 @@
       },
       "CarPartShop.Infrastructure/1.0.0": {
         "dependencies": {
+          "CarPartShop.Application": "1.0.0",
           "CarPartShopApi.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.13",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.13"

@@ -1,5 +1,6 @@
 ﻿using CarPartShop.Application.CarModelDtos;
 using CarPartShop.Infrastructure;
+using CarPartShop.Infrastructure.RepositoryContracts;
 using CarPartShopApi.Domain.CarModelAgg;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -14,11 +15,13 @@ namespace CarPartShop.Api.Controllers
     [ApiController]
     public class CarModelController : ControllerBase
     {
-        private readonly EfCarPartContext _context;
+        private readonly CarModelRepository carModelRepository;
+        private readonly UnitOfWork unitOfWork;
 
-        public CarModelController(EfCarPartContext context)
+        public CarModelController(CarModelRepository carModelRepository, UnitOfWork unitOfWork)
         {
-            _context = context;
+            this.carModelRepository = carModelRepository;
+            this.unitOfWork = unitOfWork;
         }
 
         [HttpPost]
@@ -26,56 +29,44 @@ namespace CarPartShop.Api.Controllers
         {
             var model = new CarModel(dto.Name, dto.BrandId);
 
-            _context.Add(model);
+            carModelRepository.Add(model);
 
-            _context.SaveChanges();
+            unitOfWork.Save();
         }
 
         [HttpGet]
         public List<GetCarModel> GetAll()
         {
-            return _context.CarModels.Select(_ => new GetCarModel
-            {
-                Id = _.Id,
-                Name = _.Name,
-                BrandId = _.BrandId,
-                Brand = _.Brand.Name
-            }).ToList();
+            return carModelRepository.GetAll();
         }
 
         [HttpGet("detail")]
         public GetCarModel GetDetail(Guid id)
         {
-            return _context.CarModels.Select(_ => new GetCarModel
-            {
-                Id = _.Id,
-                Name = _.Name,
-                BrandId = _.BrandId,
-                Brand = _.Brand.Name
-            }).FirstOrDefault(_ => _.Id == id);
+            return carModelRepository.GetById(id);
         }
 
         [HttpPut("{id}")]
         public void Edit(Guid id, EditCarModel dto)
         {
-            var model = _context.CarModels.SingleOrDefault(_ => _.Id == id);
+            var model = carModelRepository.FindById(id);
             if (model == null)
                 throw new Exception();
             model.Name = dto.Name;
             model.BrandId = dto.BrandId;
 
-            _context.SaveChanges();
+            unitOfWork.Save();
         }
 
         [HttpDelete("{id}")]
         public void Delete(Guid id)
         {
-            var model = _context.CarModels.SingleOrDefault(_ => _.Id == id);
+            var model = carModelRepository.FindById(id);
             if (model == null)
                 throw new Exception();
-            _context.Remove(model);
+            carModelRepository.Delete(model);
 
-            _context.SaveChanges();
+            unitOfWork.Save();
         }
     }
 }

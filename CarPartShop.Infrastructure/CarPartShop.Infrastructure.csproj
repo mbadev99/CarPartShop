@@ -14,6 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CarPartShop.Application\CarPartShop.Application.csproj" />
     <ProjectReference Include="..\CarPartShopApi.Domain\CarPartShopApi.Domain.csproj" />
   </ItemGroup>
 
