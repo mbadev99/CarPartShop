@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShopApi.Domain\\CarPartShopApi.Domain.csproj",
-      "projectName": "CarPartShopApi.Domain",
-      "projectPath": "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShopApi.Domain\\CarPartShopApi.Domain.csproj",
+      "projectUniqueName": "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShopApi.Domain\\CarPartShop.Entity.csproj",
+      "projectName": "CarPartShop.Entity",
+      "projectPath": "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShopApi.Domain\\CarPartShop.Entity.csproj",
       "packagesPath": "C:\\Users\\MBA\\.nuget\\packages\\",
       "outputPath": "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShopApi.Domain\\obj\\",
       "projectStyle": "PackageReference",

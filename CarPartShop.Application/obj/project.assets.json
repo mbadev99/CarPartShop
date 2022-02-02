@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net5.0": {
+      "CarPartShop.Entity/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/CarPartShop.Entity.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CarPartShop.Entity.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "CarPartShop.Entity/1.0.0": {
+      "type": "project",
+      "path": "../CarPartShopApi.Domain/CarPartShop.Entity.csproj",
+      "msbuildProject": "../CarPartShopApi.Domain/CarPartShop.Entity.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net5.0": [
+      "CarPartShop.Entity >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\MBA\\.nuget\\packages\\": {}
@@ -13,9 +32,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShop.Application\\CarPartShop.Application.csproj",
-      "projectName": "CarPartShop.Application",
-      "projectPath": "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShop.Application\\CarPartShop.Application.csproj",
+      "projectUniqueName": "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShop.Application\\CarPartShop.Services.csproj",
+      "projectName": "CarPartShop.Services",
+      "projectPath": "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShop.Application\\CarPartShop.Services.csproj",
       "packagesPath": "C:\\Users\\MBA\\.nuget\\packages\\",
       "outputPath": "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShop.Application\\obj\\",
       "projectStyle": "PackageReference",
@@ -33,7 +52,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShopApi.Domain\\CarPartShop.Entity.csproj": {
+              "projectPath": "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShopApi.Domain\\CarPartShop.Entity.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -1,0 +1,11 @@
+D:\TavProjects\CarPartShopApi\CarPartShop\CarPartShopApi.Domain\bin\Debug\net5.0\CarPartShop.Entity.deps.json
+D:\TavProjects\CarPartShopApi\CarPartShop\CarPartShopApi.Domain\bin\Debug\net5.0\CarPartShop.Entity.dll
+D:\TavProjects\CarPartShopApi\CarPartShop\CarPartShopApi.Domain\bin\Debug\net5.0\ref\CarPartShop.Entity.dll
+D:\TavProjects\CarPartShopApi\CarPartShop\CarPartShopApi.Domain\bin\Debug\net5.0\CarPartShop.Entity.pdb
+D:\TavProjects\CarPartShopApi\CarPartShop\CarPartShopApi.Domain\obj\Debug\net5.0\CarPartShop.Entity.GeneratedMSBuildEditorConfig.editorconfig
+D:\TavProjects\CarPartShopApi\CarPartShop\CarPartShopApi.Domain\obj\Debug\net5.0\CarPartShop.Entity.AssemblyInfoInputs.cache
+D:\TavProjects\CarPartShopApi\CarPartShop\CarPartShopApi.Domain\obj\Debug\net5.0\CarPartShop.Entity.AssemblyInfo.cs
+D:\TavProjects\CarPartShopApi\CarPartShop\CarPartShopApi.Domain\obj\Debug\net5.0\CarPartShop.Entity.csproj.CoreCompileInputs.cache
+D:\TavProjects\CarPartShopApi\CarPartShop\CarPartShopApi.Domain\obj\Debug\net5.0\CarPartShop.Entity.dll
+D:\TavProjects\CarPartShopApi\CarPartShop\CarPartShopApi.Domain\obj\Debug\net5.0\ref\CarPartShop.Entity.dll
+D:\TavProjects\CarPartShopApi\CarPartShop\CarPartShopApi.Domain\obj\Debug\net5.0\CarPartShop.Entity.pdb

@@ -28,11 +28,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShop.Application\\CarPartShop.Application.csproj": {
-                "projectPath": "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShop.Application\\CarPartShop.Application.csproj"
+              "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShop.Application\\CarPartShop.Services.csproj": {
+                "projectPath": "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShop.Application\\CarPartShop.Services.csproj"
               },
-              "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShop.Infrastructure\\CarPartShop.Infrastructure.csproj": {
-                "projectPath": "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShop.Infrastructure\\CarPartShop.Infrastructure.csproj"
+              "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShop.Persistence\\CarPartShop.PersistenceEF.csproj": {
+                "projectPath": "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShop.Persistence\\CarPartShop.PersistenceEF.csproj"
               }
             }
           }
@@ -47,6 +47,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Autofac.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.2.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.13, )"
@@ -88,12 +92,12 @@
         }
       }
     },
-    "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShop.Application\\CarPartShop.Application.csproj": {
+    "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShop.Application\\CarPartShop.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShop.Application\\CarPartShop.Application.csproj",
-        "projectName": "CarPartShop.Application",
-        "projectPath": "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShop.Application\\CarPartShop.Application.csproj",
+        "projectUniqueName": "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShop.Application\\CarPartShop.Services.csproj",
+        "projectName": "CarPartShop.Services",
+        "projectPath": "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShop.Application\\CarPartShop.Services.csproj",
         "packagesPath": "C:\\Users\\MBA\\.nuget\\packages\\",
         "outputPath": "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShop.Application\\obj\\",
         "projectStyle": "PackageReference",
@@ -111,7 +115,11 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShopApi.Domain\\CarPartShop.Entity.csproj": {
+                "projectPath": "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShopApi.Domain\\CarPartShop.Entity.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -142,14 +150,14 @@
         }
       }
     },
-    "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShop.Infrastructure\\CarPartShop.Infrastructure.csproj": {
+    "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShop.Persistence\\CarPartShop.PersistenceEF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShop.Infrastructure\\CarPartShop.Infrastructure.csproj",
-        "projectName": "CarPartShop.Infrastructure",
-        "projectPath": "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShop.Infrastructure\\CarPartShop.Infrastructure.csproj",
+        "projectUniqueName": "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShop.Persistence\\CarPartShop.PersistenceEF.csproj",
+        "projectName": "CarPartShop.PersistenceEF",
+        "projectPath": "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShop.Persistence\\CarPartShop.PersistenceEF.csproj",
         "packagesPath": "C:\\Users\\MBA\\.nuget\\packages\\",
-        "outputPath": "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShop.Infrastructure\\obj\\",
+        "outputPath": "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShop.Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\MBA\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -166,11 +174,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShop.Application\\CarPartShop.Application.csproj": {
-                "projectPath": "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShop.Application\\CarPartShop.Application.csproj"
+              "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShop.Application\\CarPartShop.Services.csproj": {
+                "projectPath": "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShop.Application\\CarPartShop.Services.csproj"
               },
-              "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShopApi.Domain\\CarPartShopApi.Domain.csproj": {
-                "projectPath": "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShopApi.Domain\\CarPartShopApi.Domain.csproj"
+              "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShopApi.Domain\\CarPartShop.Entity.csproj": {
+                "projectPath": "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShopApi.Domain\\CarPartShop.Entity.csproj"
               }
             }
           }
@@ -194,8 +202,6 @@
               "version": "[5.0.13, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.13, )"
             }
@@ -219,12 +225,12 @@
         }
       }
     },
-    "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShopApi.Domain\\CarPartShopApi.Domain.csproj": {
+    "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShopApi.Domain\\CarPartShop.Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShopApi.Domain\\CarPartShopApi.Domain.csproj",
-        "projectName": "CarPartShopApi.Domain",
-        "projectPath": "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShopApi.Domain\\CarPartShopApi.Domain.csproj",
+        "projectUniqueName": "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShopApi.Domain\\CarPartShop.Entity.csproj",
+        "projectName": "CarPartShop.Entity",
+        "projectPath": "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShopApi.Domain\\CarPartShop.Entity.csproj",
         "packagesPath": "C:\\Users\\MBA\\.nuget\\packages\\",
         "outputPath": "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShopApi.Domain\\obj\\",
         "projectStyle": "PackageReference",

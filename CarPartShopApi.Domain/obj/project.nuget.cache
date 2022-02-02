@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1VPIW+0ncneewt6sbknICHTk2PgQIqpB7YccTURO+v7iv/VpGvI1fc6jIHOUEJi+Ave9QgzwlyzqFpIJJ5l3eA==",
+  "dgSpecHash": "S3+NsqfOZJg2zyg2iuTc4EEfjlKKAxMH10i/SN4iYyI99MhsMBK8kUHDkg56AmmU+tVWI1NyY/h/JUbQwarNvA==",
   "success": true,
-  "projectFilePath": "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShopApi.Domain\\CarPartShopApi.Domain.csproj",
+  "projectFilePath": "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShopApi.Domain\\CarPartShop.Entity.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

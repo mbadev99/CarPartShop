@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "tLT5+J6NhfHd+fBlVE5c0BWsGqQDZohWV5/aidM/9Q0qrHQ/47EBNhE3SCWkilZ0wJE1SGbz068dmoT1dx4vtA==",
+  "dgSpecHash": "oyB+QrVp0QqWFEYXHcdw6Q67ejxVK/f36gKe8EJoja2DM3KHDUm99/bkpFm8NFaCxZbmEdKRwV4gOign/sVLhA==",
   "success": true,
   "projectFilePath": "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShop.Api\\CarPartShop.Api.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\MBA\\.nuget\\packages\\autofac\\6.0.0\\autofac.6.0.0.nupkg.sha512",
+    "C:\\Users\\MBA\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.2.0\\autofac.extensions.dependencyinjection.7.2.0.nupkg.sha512",
     "C:\\Users\\MBA\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\MBA\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\MBA\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",

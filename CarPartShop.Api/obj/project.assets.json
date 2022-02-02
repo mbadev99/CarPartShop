@@ -2,10 +2,35 @@
   "version": 3,
   "targets": {
     "net5.0": {
+      "Autofac/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Diagnostics.DiagnosticSource": "4.7.1"
+        },
+        "compile": {
+          "lib/netstandard2.1/Autofac.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Autofac.dll": {}
+        }
+      },
+      "Autofac.Extensions.DependencyInjection/7.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Autofac": "6.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0"
+        },
+        "compile": {
+          "lib/net5.0/Autofac.Extensions.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Autofac.Extensions.DependencyInjection.dll": {}
+        }
+      },
       "Humanizer.Core/2.8.26": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/Humanizer.dll": {}
         },
         "runtime": {
           "lib/netstandard2.0/Humanizer.dll": {}
@@ -133,7 +158,7 @@
           "Microsoft.EntityFrameworkCore.Relational": "5.0.13"
         },
         "compile": {
-          "lib/netstandard2.1/_._": {}
+          "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Design.dll": {}
         },
         "runtime": {
           "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Design.dll": {}
@@ -1594,45 +1619,91 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "CarPartShop.Application/1.0.0": {
+      "CarPartShop.Entity/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "compile": {
-          "bin/placeholder/CarPartShop.Application.dll": {}
+          "bin/placeholder/CarPartShop.Entity.dll": {}
         },
         "runtime": {
-          "bin/placeholder/CarPartShop.Application.dll": {}
+          "bin/placeholder/CarPartShop.Entity.dll": {}
         }
       },
-      "CarPartShop.Infrastructure/1.0.0": {
+      "CarPartShop.PersistenceEF/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
-          "CarPartShop.Application": "1.0.0",
-          "CarPartShopApi.Domain": "1.0.0",
+          "CarPartShop.Entity": "1.0.0",
+          "CarPartShop.Services": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.13",
-          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.13"
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.13",
+          "Microsoft.EntityFrameworkCore.Tools": "5.0.13"
         },
         "compile": {
-          "bin/placeholder/CarPartShop.Infrastructure.dll": {}
+          "bin/placeholder/CarPartShop.PersistenceEF.dll": {}
         },
         "runtime": {
-          "bin/placeholder/CarPartShop.Infrastructure.dll": {}
+          "bin/placeholder/CarPartShop.PersistenceEF.dll": {}
         }
       },
-      "CarPartShopApi.Domain/1.0.0": {
+      "CarPartShop.Services/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "CarPartShop.Entity": "1.0.0"
+        },
         "compile": {
-          "bin/placeholder/CarPartShopApi.Domain.dll": {}
+          "bin/placeholder/CarPartShop.Services.dll": {}
         },
         "runtime": {
-          "bin/placeholder/CarPartShopApi.Domain.dll": {}
+          "bin/placeholder/CarPartShop.Services.dll": {}
         }
       }
     }
   },
   "libraries": {
+    "Autofac/6.0.0": {
+      "sha512": "tRVRXGxwXbQmPy1ZGso115O55ffVW4mWtufjOy7hduQ1BNVR1j7RQQjxpYuB6tJw5OrgqRWYVJLJ8RwYNz/j+A==",
+      "type": "package",
+      "path": "autofac/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "autofac.6.0.0.nupkg.sha512",
+        "autofac.nuspec",
+        "icon.png",
+        "lib/netstandard2.0/Autofac.dll",
+        "lib/netstandard2.0/Autofac.pdb",
+        "lib/netstandard2.0/Autofac.xml",
+        "lib/netstandard2.1/Autofac.dll",
+        "lib/netstandard2.1/Autofac.pdb",
+        "lib/netstandard2.1/Autofac.xml"
+      ]
+    },
+    "Autofac.Extensions.DependencyInjection/7.2.0": {
+      "sha512": "S2Jor8pTV+8QSs96ENq/FhGdnrWsntGs93z0OXYlIivUWGPNXQHNCjFPfSBeBlHClvJFEXMvlkY32bAKy2YkPg==",
+      "type": "package",
+      "path": "autofac.extensions.dependencyinjection/7.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "autofac.extensions.dependencyinjection.7.2.0.nupkg.sha512",
+        "autofac.extensions.dependencyinjection.nuspec",
+        "icon.png",
+        "lib/net5.0/Autofac.Extensions.DependencyInjection.dll",
+        "lib/net5.0/Autofac.Extensions.DependencyInjection.pdb",
+        "lib/net5.0/Autofac.Extensions.DependencyInjection.xml",
+        "lib/net6.0/Autofac.Extensions.DependencyInjection.dll",
+        "lib/net6.0/Autofac.Extensions.DependencyInjection.pdb",
+        "lib/net6.0/Autofac.Extensions.DependencyInjection.xml",
+        "lib/netstandard2.0/Autofac.Extensions.DependencyInjection.dll",
+        "lib/netstandard2.0/Autofac.Extensions.DependencyInjection.pdb",
+        "lib/netstandard2.0/Autofac.Extensions.DependencyInjection.xml",
+        "lib/netstandard2.1/Autofac.Extensions.DependencyInjection.dll",
+        "lib/netstandard2.1/Autofac.Extensions.DependencyInjection.pdb",
+        "lib/netstandard2.1/Autofac.Extensions.DependencyInjection.xml"
+      ]
+    },
     "Humanizer.Core/2.8.26": {
       "sha512": "OiKusGL20vby4uDEswj2IgkdchC1yQ6rwbIkZDVBPIR6al2b7n3pC91elBul9q33KaBgRKhbZH3+2Ur4fnWx2A==",
       "type": "package",
@@ -6005,26 +6076,27 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
-    "CarPartShop.Application/1.0.0": {
+    "CarPartShop.Entity/1.0.0": {
       "type": "project",
-      "path": "../CarPartShop.Application/CarPartShop.Application.csproj",
-      "msbuildProject": "../CarPartShop.Application/CarPartShop.Application.csproj"
+      "path": "../CarPartShopApi.Domain/CarPartShop.Entity.csproj",
+      "msbuildProject": "../CarPartShopApi.Domain/CarPartShop.Entity.csproj"
     },
-    "CarPartShop.Infrastructure/1.0.0": {
+    "CarPartShop.PersistenceEF/1.0.0": {
       "type": "project",
-      "path": "../CarPartShop.Infrastructure/CarPartShop.Infrastructure.csproj",
-      "msbuildProject": "../CarPartShop.Infrastructure/CarPartShop.Infrastructure.csproj"
+      "path": "../CarPartShop.Persistence/CarPartShop.PersistenceEF.csproj",
+      "msbuildProject": "../CarPartShop.Persistence/CarPartShop.PersistenceEF.csproj"
     },
-    "CarPartShopApi.Domain/1.0.0": {
+    "CarPartShop.Services/1.0.0": {
       "type": "project",
-      "path": "../CarPartShopApi.Domain/CarPartShopApi.Domain.csproj",
-      "msbuildProject": "../CarPartShopApi.Domain/CarPartShopApi.Domain.csproj"
+      "path": "../CarPartShop.Application/CarPartShop.Services.csproj",
+      "msbuildProject": "../CarPartShop.Application/CarPartShop.Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "CarPartShop.Application >= 1.0.0",
-      "CarPartShop.Infrastructure >= 1.0.0",
+      "Autofac.Extensions.DependencyInjection >= 7.2.0",
+      "CarPartShop.PersistenceEF >= 1.0.0",
+      "CarPartShop.Services >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 5.0.13",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.13",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.13",
@@ -6058,11 +6130,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShop.Application\\CarPartShop.Application.csproj": {
-              "projectPath": "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShop.Application\\CarPartShop.Application.csproj"
+            "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShop.Application\\CarPartShop.Services.csproj": {
+              "projectPath": "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShop.Application\\CarPartShop.Services.csproj"
             },
-            "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShop.Infrastructure\\CarPartShop.Infrastructure.csproj": {
-              "projectPath": "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShop.Infrastructure\\CarPartShop.Infrastructure.csproj"
+            "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShop.Persistence\\CarPartShop.PersistenceEF.csproj": {
+              "projectPath": "D:\\TavProjects\\CarPartShopApi\\CarPartShop\\CarPartShop.Persistence\\CarPartShop.PersistenceEF.csproj"
             }
           }
         }
@@ -6077,6 +6149,10 @@
       "net5.0": {
         "targetAlias": "net5.0",
         "dependencies": {
+          "Autofac.Extensions.DependencyInjection": {
+            "target": "Package",
+            "version": "[7.2.0, )"
+          },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "[5.0.13, )"

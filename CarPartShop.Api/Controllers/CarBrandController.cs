@@ -1,13 +1,8 @@
-﻿using CarPartShop.Application.CarBrandDtos;
-using CarPartShop.Infrastructure;
-using CarPartShop.Infrastructure.RepositoryContracts;
-using CarPartShopApi.Domain.CarBrandAgg;
-using Microsoft.AspNetCore.Http;
+﻿using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using CarPartShop.Services.CarBrands.Contracts;
+using CarPartShop.Services.CarBrands.Contracts.Dtos;
 
 namespace CarPartShop.Api.Controllers
 {
@@ -15,57 +10,41 @@ namespace CarPartShop.Api.Controllers
     [ApiController]
     public class CarBrandController : ControllerBase
     {
-        private readonly CarBrandRepository carBrandRepository;
-        private readonly UnitOfWork unitOfWork;
+        private readonly CarBrandService _carBrandService;
 
-        public CarBrandController(CarBrandRepository carBrandRepository, UnitOfWork unitOfWork)
+        public CarBrandController(CarBrandService carBrandService)
         {
-            this.carBrandRepository = carBrandRepository;
-            this.unitOfWork = unitOfWork;
+            _carBrandService = carBrandService;
         }
 
         [HttpPost]
         public void Add(AddCarBrand dto)
         {
-            var brand = new CarBrand(dto.Name);
-
-            carBrandRepository.Add(brand);
-
-            unitOfWork.Save();
+            _carBrandService.Add(dto);
         }
 
         [HttpGet]
         public List<GetCarBrand> GetAll()
         {
-            return carBrandRepository.GetAll();
+            return _carBrandService.GetAll();
         }
 
         [HttpGet("detail")]
         public GetCarBrand GetDetail(Guid id)
         {
-            return carBrandRepository.GetById(id);
+            return _carBrandService.GetDetail(id);
         }
 
         [HttpPut("{id}")]
         public void Edit(Guid id, EditCarBrand dto)
         {
-            var brand = carBrandRepository.GetById(id);
-            if (brand == null)
-                throw new Exception();
-            brand.Name = dto.Name;
-
-            unitOfWork.Save();
+            _carBrandService.Edit(id, dto);
         }
 
         [HttpDelete("{id}")]
         public void Delete(Guid id)
         {
-            var brand = carBrandRepository.FindById(id);
-            if (brand == null)
-                throw new Exception();
-            carBrandRepository.Delete(brand);
-
-            unitOfWork.Save();
+            _carBrandService.Delete(id);
         }
     }
 }

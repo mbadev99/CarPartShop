@@ -1,0 +1,4 @@
+D:\TavProjects\CarPartShopApi\CarPartShop\CarPartShop.Persistence\obj\Debug\net5.0\CarPartShop.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+D:\TavProjects\CarPartShopApi\CarPartShop\CarPartShop.Persistence\obj\Debug\net5.0\CarPartShop.Persistence.AssemblyInfoInputs.cache
+D:\TavProjects\CarPartShopApi\CarPartShop\CarPartShop.Persistence\obj\Debug\net5.0\CarPartShop.Persistence.AssemblyInfo.cs
+D:\TavProjects\CarPartShopApi\CarPartShop\CarPartShop.Persistence\obj\Debug\net5.0\CarPartShop.Persistence.csproj.CoreCompileInputs.cache
